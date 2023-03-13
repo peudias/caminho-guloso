@@ -1,1 +1,1 @@
-# O Caminho Guloso
+# Algoritmo Caminho Guloso
