@@ -60,7 +60,7 @@ void tokenizar(char *str, int **matriz, int contadorLinha){
 void ImprimeAleatoria(int N, int **matriz){
     for(int i = 0; i < N; i++){
         for(int j = 0; j < N; j++){
-            printf("[%d]", matriz[i][j]);
+            printf("[%-3d]", matriz[i][j]);
         }
         printf("\n");
     }
