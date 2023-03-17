@@ -1,5 +1,5 @@
-#ifndef CAMINHOGULOSO_H 
-#define CAMINHOGULOSO_H
+#ifndef CONTADOR_H 
+#define CONTADOR_H
 
 #include<stdio.h>
 #include<stdlib.h>
@@ -7,7 +7,8 @@
 #include<string.h>
 
 void ImprimeAleatoria(int N, int **matriz);
-void Caminho(int **matriz, int N);
+void menu(int **matriz, int N);
+void Contador(int N, int **matriz);
 int** lerArquivo(int *tamanho);
 void tokenizar(char *str, int **matriz, int contadorLinha);
 int primeiraLinha(char *str);
