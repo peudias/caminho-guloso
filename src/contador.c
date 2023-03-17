@@ -1,9 +1,6 @@
 #include "contador.h"
 
 void menu(int **matriz, int N){
-	//int matriz[N][N];
-
-	//MatrizAleatoria(N, matriz);
     printf("\n=========================\n");
     printf("\nprimeira matriz\n");
 	ImprimeAleatoria(N, matriz);
@@ -39,7 +36,6 @@ int** lerArquivo(int *tamanho){
                     tokenizar(linha, matriz, contador);
                     contador++;
                 }else{
-                    //menu(matriz, tamMatriz);
                     if(contador == tamMatriz){
                        menu(matriz, tamMatriz);    
                     }
@@ -48,12 +44,10 @@ int** lerArquivo(int *tamanho){
             }
 		}
 	}
-    //printf("aux = %d\ntamMatriz=%d\n", auxInputLinhaFinal, tamMatriz);
     if(contador == tamMatriz){
         menu(matriz, tamMatriz);    
     }
 	fclose(file);
-    //ImprimeAleatoria(tamMatriz, matriz);
     *tamanho = tamMatriz;
     return matriz;
 }
@@ -65,8 +59,6 @@ int primeiraLinha(char *str){
 	tokens = strtok(str, sep);
 
 	while (tokens != NULL) {
-		//printf("%s\n", tokens);
-		//tokens = strtok(NULL, sep);
         return atoi(tokens);
     }
 }
@@ -81,7 +73,6 @@ void tokenizar(char *str, int **matriz, int contadorLinha){
 	while (tokens != NULL) {
         matriz[contadorLinha][contadorColuna] = atoi(tokens);
         contadorColuna++;
-		//printf("%s\n", tokens);
 		tokens = strtok(NULL, sep);
 	}
 }
@@ -97,9 +88,6 @@ void ImprimeAleatoria(int N, int **matriz){
 }
 
 void Contador(int N, int **matriz){  
-    //int soma = soma + matriz[0][0];
-
-    //int soma = 0;
 	int i = 0; // i = linha
 	int j = 0; // j = coluna
 
@@ -115,7 +103,6 @@ void Contador(int N, int **matriz){
             matriz[i][j] = -1;
 			j++;
         }else if(j == N - 1){
-            //matriz[i][j]
             if(matriz[i + 1][j - 1] >= matriz[i + 1][j]){
                 matriz[i][j] = -1;
                 i++;
