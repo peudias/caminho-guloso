@@ -5,3 +5,5 @@
 - como resolvi o problema (com imagens)
 - como executar
 - contatos
+
+git add . && git commit -m "Atualizando" && git push
