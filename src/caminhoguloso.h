@@ -1,5 +1,5 @@
-#ifndef CONTADOR_H 
-#define CONTADOR_H
+#ifndef CAMINHOGULOSO_H 
+#define CAMINHOGULOSO_H
 
 #include<stdio.h>
 #include<stdlib.h>

@@ -1,4 +1,4 @@
-#include "contador.h"
+#include "caminhoguloso.h"
 
 void menu(int **matriz, int N){
     printf("\n=========================\n");

@@ -1,4 +1,4 @@
-#include "contador.h"
+#include "caminhoguloso.h"
 
 int main(){
 
