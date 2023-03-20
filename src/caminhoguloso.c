@@ -2,10 +2,8 @@
 
 void menu(int **matriz, int N){
     printf("\n=========================\n");
-    printf("\nprimeira matriz\n");
 	ImprimeAleatoria(N, matriz);
     Contador(N, matriz);
-    printf("\nCaminho percorrido:\n");
     ImprimeAleatoria(N, matriz);
 }
 
@@ -83,8 +81,7 @@ void ImprimeAleatoria(int N, int **matriz){
             printf("[%-3d]", matriz[i][j]);
         }
         printf("\n");
-    }
-    
+    }   
 }
 
 void Contador(int N, int **matriz){  
@@ -96,20 +93,29 @@ void Contador(int N, int **matriz){
 	int valuesPerMatrix[N * N];
 	valuesPerMatrix[auxValuesPerMatrix] = matriz[i][j];
     
-    //int contador = -1;
+    int soma = 0;
 
     do{
         if(i == N - 1){
+            auxValuesPerMatrix++;
+            soma += matriz[i][j];
             matriz[i][j] = -1;
 			j++;
+            valuesPerMatrix[auxValuesPerMatrix] = matriz[i][j];
         }else if(j == N - 1){
             if(matriz[i + 1][j - 1] >= matriz[i + 1][j]){
+                auxValuesPerMatrix++;
+                soma += matriz[i][j];
                 matriz[i][j] = -1;
                 i++;
                 j--;
+                valuesPerMatrix[auxValuesPerMatrix] = matriz[i][j];
             }else if(matriz[i + 1][j] >= matriz[i + 1][j - 1]){
+                auxValuesPerMatrix++;
+                soma += matriz[i][j];
                 matriz[i][j] = -1;
                 i++;
+                valuesPerMatrix[auxValuesPerMatrix] = matriz[i][j];
             }else{
                 //matriz[i][j] = -1;
                 //i++;
@@ -118,48 +124,80 @@ void Contador(int N, int **matriz){
         }else if(j == 0 && i < N - 1){
             if(matriz[i + 1][j] >= matriz[i][j + 1] 
             && matriz[i + 1][j] >= matriz[i + 1][j + 1]){
+                auxValuesPerMatrix++;
+                soma += matriz[i][j];
                 matriz[i][j] = -1;
                 i++;
+                valuesPerMatrix[auxValuesPerMatrix] = matriz[i][j];
             }else if(matriz[i][j + 1] >= matriz[i + 1][j] 
             && matriz[i][j + 1] >= matriz[i + 1][j + 1]){
+                auxValuesPerMatrix++;
+                soma += matriz[i][j];
                 matriz[i][j] = -1;
                 j++;
+                valuesPerMatrix[auxValuesPerMatrix] = matriz[i][j];
             }else{
+                auxValuesPerMatrix++;
+                soma += matriz[i][j];
                 matriz[i][j] = -1;
                 i++;
                 j++;
+                valuesPerMatrix[auxValuesPerMatrix] = matriz[i][j];
             }
         }else{
             if(matriz[i][j - 1] >= matriz[i + 1][j - 1]
             && matriz[i][j - 1] >= matriz[i + 1][j]
             && matriz[i][j - 1] >= matriz[i + 1][j + 1]
             && matriz[i][j - 1] >= matriz[i][j + 1]){
+                auxValuesPerMatrix++;
+                soma += matriz[i][j];
                 matriz[i][j] = -1;
                 j--;
+                valuesPerMatrix[auxValuesPerMatrix] = matriz[i][j];
             }else if(matriz[i + 1][j] >= matriz[i + 1][j - 1]
                 && matriz[i + 1][j] >= matriz[i][j + 1]
                 && matriz[i + 1][j] >= matriz[i + 1][j + 1]
                 && matriz[i + 1][j] >= matriz[i][j - 1]){
+                auxValuesPerMatrix++;
+                soma += matriz[i][j];
                 matriz[i][j] = -1;
                 i++;
+                valuesPerMatrix[auxValuesPerMatrix] = matriz[i][j];
             }else if(matriz[i][j + 1] >= matriz[i + 1][j - 1]
             && matriz[i][j + 1] >= matriz[i + 1][j]
             && matriz[i][j + 1] >= matriz[i + 1][j + 1]
             && matriz[i][j + 1] >= matriz[i][j - 1]){
+                auxValuesPerMatrix++;
+                soma += matriz[i][j];
                 matriz[i][j] = -1;
                 j++;
+                valuesPerMatrix[auxValuesPerMatrix] = matriz[i][j];
             }else if(matriz[i + 1][j + 1] >= matriz[i][j - 1]
             && matriz[i + 1][j + 1] >= matriz[i + 1][j]
             && matriz[i + 1][j + 1] >= matriz[i + 1][j - 1]
             && matriz[i + 1][j + 1] >= matriz[i][j + 1]){
+                auxValuesPerMatrix++;
+                soma += matriz[i][j];
                 matriz[i][j] = -1;
                 i++;
                 j++;
+                valuesPerMatrix[auxValuesPerMatrix] = matriz[i][j];
             }else{
+                auxValuesPerMatrix++;
+                soma += matriz[i][j];
                 matriz[i][j] = -1;
                 i++;
                 j--;
+                valuesPerMatrix[auxValuesPerMatrix] = matriz[i][j];
             }
         }
     }while(i < N && j < N);
-}
+    printf("\nSoma do caminho percorrido = %d\n", soma);
+
+    printf("Caminho percorrido");    
+    for (int i = 0; i <= auxValuesPerMatrix - 1; i++){
+        printf(" -> %d", valuesPerMatrix[i]);
+    }
+    printf("\n\n");
+
+}   
