@@ -42,6 +42,10 @@ Dessa forma, o mesmo caminha por um conjunto de matrizes fornecidas como entrada
 
 ## Resolução do problema (com imagens)
 
+### Entradas de dados necessárias
+
+### Saídas obtidas
+
 ## Compilação e Execução
 
 Este algoritmo possui um arquivo Makefile que realiza todo o procedimento de compilação e execução. Para tanto, temos as seguintes diretrizes de execução:
