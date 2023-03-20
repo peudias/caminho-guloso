@@ -12,7 +12,7 @@
 
 Este problema mexe com o conceito de caminhamento em matrizes de forma gulosa, ou seja, optando por um dado caminho e não mais olhando para trás ou para decisões já tomadas. 
 
-Dessa forma, o mesmo caminha por um conjunto de matrizes fornecidas como entrada, objetivando encontrar o maior valor final segundo um conjunto de regras preestabelecidas, 
+Dessa forma, o mesmo caminha por um conjunto de matrizes fornecidas como entrada, objetivando encontrar o maior valor final segundo um conjunto de regras preestabelecidas.
 
 ## Regras
 
@@ -44,6 +44,16 @@ Dessa forma, o mesmo caminha por um conjunto de matrizes fornecidas como entrada
 
 ### Entradas de dados necessárias
 
+No programa existe uma pasta nomeada como `pasta`, que dentro contém um documento chamado `input.data`.
+
+Este documento pode ser gerado através do seguinte repositório git, que foi utilizado como referência: [Generate Data To Matrix](https://github.com/mpiress/GenerateDataToMatrix) [^1]
+
+Analogamente, também pode ser digitado manualmente pelo usuário, mas não é o intuito que utilize dessa forma.
+
+Para exemplificar, utilizarei o seguinte arquivo `input.data`, gerado por mim através do repositório citado acima.
+
+![Entrada de dados](https://user-images.githubusercontent.com/84406892/226461030-8900d360-f4db-464f-a305-ec2d873364cb.png)
+  
 ### Saídas obtidas
 
 ## Compilação e Execução
@@ -58,6 +68,9 @@ Este algoritmo possui um arquivo Makefile que realiza todo o procedimento de com
 |  `make run`            | Executa o programa da pasta build após a realização da compilação                                 |
 |  `make r`              | Realiza o `make clean`, `make` e `make run` juntos                                                |
 
+## Referências
+
+[^1]: [GitHub](<https://github.com/mpiress/GenerateDataToMatrix>)
 
 ## Contatos
 
