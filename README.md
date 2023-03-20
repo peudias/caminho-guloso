@@ -68,10 +68,6 @@ Este algoritmo possui um arquivo Makefile que realiza todo o procedimento de com
 |  `make run`            | Executa o programa da pasta build após a realização da compilação                                 |
 |  `make r`              | Realiza o `make clean`, `make` e `make run` juntos                                                |
 
-## Referências
-
-[^1]: [GitHub](<https://github.com/mpiress/GenerateDataToMatrix>)
-
 ## Contatos
 
 <div style="display: inline-block;">
@@ -91,3 +87,9 @@ Este algoritmo possui um arquivo Makefile que realiza todo o procedimento de com
 </div>
 
 git add . && git commit -m "Atualizando" && git push
+
+## Referências
+
+[^1]: [GitHub](<https://github.com/mpiress/GenerateDataToMatrix>)
+
+
