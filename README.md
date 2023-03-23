@@ -123,7 +123,7 @@ O programa em si possui basicamente 6 funções. Todas que irei citar, estão pr
 > Tem como funcionalidade tokenizar a primeira linha do arquivo `input.data`. É a função responsável por fazer o programa reconhecer que a primeira linha será a correspondente aos valores de N da matriz NxN.
 
 - tokenizar( );
-> Função localizada na [linha 64](https://github.com/phpdias/caminho-guloso/blob/main/src/caminhoguloso.c#L3). 
+> Função localizada na [linha 64](https://github.com/phpdias/caminho-guloso/blob/main/src/caminhoguloso.c#L64). 
 
 > Tem como funcionalidade tokenizar. É a função responsável por reconhecer as matrizes e acessar a posição apropriada da matriz.
 
