@@ -54,6 +54,8 @@ Nas palavras de Aditya Y. Bhargava,
 
 ### Resolução do problema
 
+A seguir, três seções das quais abordo a resolução do problema, desde a `entrada de dados`, `saída de dados` e uma rápida explicação de cada uma das `funções imeplementadas` no programa.
+
 ### Entradas de dados necessárias
 
 No programa existe um diretório nomeado como `pasta`, que dentro contém um documento chamado `input.data`.
@@ -64,7 +66,7 @@ Analogamente, também pode ser digitado manualmente pelo usuário, mas não é o
 
 Para exemplificar, utilizarei o seguinte arquivo `input.data`, gerado por mim através do repositório citado acima.
 
-### Arquivo input.data
+#### Arquivo input.data
 
 No exemplo a seguir, estão as informações sobre o tamanho da matriz e quantas matrizes serão analisadas neste programa.
 
