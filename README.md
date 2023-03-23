@@ -106,32 +106,34 @@ Por fim, uma impressão visual do caminho percorrido dessa matriz.
 O programa em si possui basicamente 6 funções. Todas que irei citar, estão presentes no `caminhoguloso.c`.
 
 - menu( );
-> Função localizada na `linha 3`. 
+> Função localizada na [linha 3](https://github.com/phpdias/caminho-guloso/blob/main/src/caminhoguloso.c#L3). 
+
+
 
 > Tem como funcionalidade chamar a função que faz imprimir, e assim, imprimir a matriz original. Em seguida executar a função que faz caminhar pela matriz, e por fim, imprimir a matriz final, que sairá de forma visual para o usuário mostrando o caminho percorrido. 
 
 - lerArquivo( );
-> Função localizada na `linha 10`. 
+> Função localizada na [linha 10](https://github.com/phpdias/caminho-guloso/blob/main/src/caminhoguloso.c#L10). 
 
 > Tem como funcionalidade abrir o arquivo `input.data`, e não sendo possível realizar essa ação, imprimirá uma mensagem indicando tal erro. Do contrário, tendo êxito em abrir o arquivo, essa função irá ler as informações dentro do arquivo. Também é responsável por lidar com a possibilidade do arquivo `input.data` ter espaços em branco no final da última matriz, fazendo com que isso não interfira no resultado desejado.
 
 - primeiraLinha( );
-> Função localizada na `linha 53`. 
+> Função localizada na [linha 53](https://github.com/phpdias/caminho-guloso/blob/main/src/caminhoguloso.c#L53). 
 
 > Tem como funcionalidade tokenizar a primeira linha do arquivo `input.data`. É a função responsável por fazer o programa reconhecer que a primeira linha será a correspondente aos valores de N da matriz NxN.
 
 - tokenizar( );
-> Função localizada na `linha 64`. 
+> Função localizada na [linha 64](https://github.com/phpdias/caminho-guloso/blob/main/src/caminhoguloso.c#L3). 
 
 > Tem como funcionalidade tokenizar. É a função responsável por reconhecer as matrizes e acessar a posição apropriada da matriz.
 
 - ImprimeAleatoria( );
-> Função localizada na `linha 78`. 
+> Função localizada na [linha 78](https://github.com/phpdias/caminho-guloso/blob/main/src/caminhoguloso.c#L78). 
 
 > Tem como funcionalidade imprimir a matriz e também é responsável pela formatação da mesma para a visualização do usuário.
 
 - Contador( );
-> Função localizada na `linha 87`. 
+> Função localizada na [linha 87](https://github.com/phpdias/caminho-guloso/blob/main/src/caminhoguloso.c#L87). 
 
 > Tem como funcionalidade percorrer a matriz. Essa é a função com mais finalidades para o problema. É onde está a lógica do programa para que a matriz seja percorrida corretamente. Também é lá que é feito a soma dos números transitados pelas matrizes, além de ainda ser responsável por imprimir os valores ordenados em que a matriz movimentou.
 
