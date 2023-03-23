@@ -40,7 +40,7 @@ Dessa forma, o mesmo caminha por um conjunto de matrizes fornecidas como entrada
 
   Todas essas regras só se aplicam se a casa (posição [ i , j ] da matriz) ainda não tenha sido descoberta ou já processada. 
 
-5 - Para caminhar, deve sempre optar pelo valor da próxima casa, valor esse que deve ser o maior dentre eles. Caso haja empate entre casas, crie uma regra para adotar sempre uma mesma decisão de caminhamento. 
+5 - Para caminhar, deve sempre optar pelo valor da próxima casa, valor esse que deve ser o maior dentre eles. Caso haja empate entre casas, siga uma regra para adotar sempre uma mesma decisão de caminhamento. 
 
 6 - Ao alcançar a última linha e coluna da matriz, selecione a próxima matriz e repita todo o processo novamente. Por fim, apresente ao usuário qual foi o caminho adotado e qual a soma obtida do caminho realizado. 
 
