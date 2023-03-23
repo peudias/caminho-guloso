@@ -23,21 +23,15 @@ Dessa forma, o mesmo caminha por um conjunto de matrizes fornecidas como entrada
 3 - Partindo da primeira matriz, deve iniciar de um ponto preestabelecido, sendo este contido em arquivos extras de configuração. Não é permitido definir diretamente no código. 
 
 4 - A partir da primeira matriz, tem como regras: 
-  
   > (a) avançar para a próxima coluna; 
-  
   > (b) retroceder para coluna anterior; 
-  
   > (c) saltar para a linha de baixo; 
-  
   > (d) ir em diagonal para baixo. 
   
   ![exemplomatriz](https://user-images.githubusercontent.com/84406892/227231857-df0d0d47-e2e8-4a13-ac89-9f6e3dbd4262.jpeg)
   
-  Obs:. Setas verdes indicam que a matriz <strong>PODE</strong> seguir aquele caminho. Setas vermelhas indicam que a matriz <strong>NÃO</strong> pode seguir aquele caminho.
+  > Obs:. Setas verdes indicam que a matriz <strong>PODE</strong> seguir aquele caminho. Setas vermelhas indicam que a matriz <strong>NÃO</strong> pode seguir aquele caminho.
   
-  
-
   Todas essas regras só se aplicam se a casa (posição [ i , j ] da matriz) ainda não tenha sido descoberta ou já processada. 
 
 5 - Para caminhar, deve sempre optar pelo valor da próxima casa, valor esse que deve ser o maior dentre eles. Caso haja empate entre casas, siga uma regra para adotar sempre uma mesma decisão de caminhamento. 
