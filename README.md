@@ -36,7 +36,7 @@ Dessa forma, o mesmo caminha por um conjunto de matrizes fornecidas como entrada
   
   > Obs:. Setas verdes indicam que a matriz <strong>PODE</strong> seguir aquele caminho. Setas vermelhas indicam que a matriz <strong>NÃO</strong> pode seguir aquele caminho.
   
-  Todas essas regras só se aplicam se a casa (posição [ i , j ] da matriz) ainda não tenha sido descoberta ou já processada. 
+  > Todas essas regras só se aplicam se a casa (posição [ i , j ] da matriz) ainda não tenha sido descoberta ou já processada. 
 
 5 - Para caminhar, deve sempre optar pelo valor da próxima casa, valor esse que deve ser o maior dentre eles. Caso haja empate entre casas, siga uma regra para adotar sempre uma mesma decisão de caminhamento. 
 
