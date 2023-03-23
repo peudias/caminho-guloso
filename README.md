@@ -46,7 +46,7 @@ Dessa forma, o mesmo caminha por um conjunto de matrizes fornecidas como entrada
 
 ## Sobre o caminho guloso
 
-## Resolução do problema (com imagens)
+## Resolução do problema
 
 ### Entradas de dados necessárias
 
