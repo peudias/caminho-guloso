@@ -32,6 +32,12 @@ Dessa forma, o mesmo caminha por um conjunto de matrizes fornecidas como entrada
   
   (d) ir em diagonal para baixo. 
   
+  ![exemplomatriz](https://user-images.githubusercontent.com/84406892/227231857-df0d0d47-e2e8-4a13-ac89-9f6e3dbd4262.jpeg)
+  
+  Obs:. Setas verdes indicam que a matriz <strong>PODE</strong> seguir aquele caminho. Setas vermelhas indicam que a matriz <strong>NÃO</strong> pode seguir aquele caminho.
+  
+  
+
   Todas essas regras só se aplicam se a casa (posição [i,j] da matriz) ainda não tenha sido descoberta ou já processada. 
 
 5 - Para caminhar, deve sempre optar pelo valor da próxima casa, valor esse que deve ser o maior dentre eles. Caso haja empate entre casas, crie uma regra para adotar sempre uma mesma decisão de caminhamento. 
@@ -44,7 +50,7 @@ Dessa forma, o mesmo caminha por um conjunto de matrizes fornecidas como entrada
 
 ### Entradas de dados necessárias
 
-No programa existe uma pasta nomeada como `pasta`, que dentro contém um documento chamado `input.data`.
+No programa existe um diretório nomeado como `pasta`, que dentro contém um documento chamado `input.data`.
 
 Este documento pode ser gerado através do seguinte repositório git, que foi utilizado como referência: [Generate Data To Matrix](https://github.com/mpiress/GenerateDataToMatrix) [^1]
 
@@ -52,9 +58,82 @@ Analogamente, também pode ser digitado manualmente pelo usuário, mas não é o
 
 Para exemplificar, utilizarei o seguinte arquivo `input.data`, gerado por mim através do repositório citado acima.
 
+### input.data
+
+No exemplo a seguir, estão as informações sobre o tamanho da matriz e quantas matrizes serão analisadas neste programa.
+
+Observe que a primeira linha do arquivo é onde se encontram as entradas NxN da matriz.
+
+Nos blocos subsequentes, a cada cinco linhas, separados por uma linha em branco, encontram-se as matrizes.
+
+Nessa imagem é possível perceber que existem cinco matrizes distintas entre si no total.
+
 ![Entrada de dados](https://user-images.githubusercontent.com/84406892/226461030-8900d360-f4db-464f-a305-ec2d873364cb.png)
   
 ### Saídas obtidas
+
+Ao executar o programa, a seguinte saída é gerada.
+
+Observe que existe um padrão nas impressões. 
+Primeiro é impresso a matriz original, corretamente ordenada e dentro de colchetes.
+
+Em seguida é mostrado a soma do caminho que a matriz percorreu durante a execução do programa, e logo abaixo o caminho detalhado por onde passou.
+
+Por fim, uma impressão visual do caminho percorrido dessa matriz.
+
+#### Primeira Matriz percorrida
+
+![matriz1](https://user-images.githubusercontent.com/84406892/227222471-5bc2d926-a49d-48f6-a54a-2d737c105f83.png)
+
+#### Segunda Matriz percorrida
+
+![matriz2](https://user-images.githubusercontent.com/84406892/227222477-9b5676fc-d7d7-491f-a5b1-bdd1f3874534.png)
+
+#### Terceira Matriz percorrida
+
+![matriz3](https://user-images.githubusercontent.com/84406892/227222480-64b2e842-054e-4b0a-acfc-892cdd0583d6.png)
+
+#### Quarta Matriz percorrida
+
+![matriz4](https://user-images.githubusercontent.com/84406892/227222484-4b666d06-5406-49c7-98d7-1a4c449b706d.png)
+
+#### Quinta Matriz percorrida
+
+![matriz5](https://user-images.githubusercontent.com/84406892/227222486-d8e0d622-035a-4be3-bce2-37d8ba149054.png)
+
+### Explicando um pouco sobre o código
+
+O programa em si possui basicamente 6 funções. Todas que irei citar, estão presentes no `caminhoguloso.c`.
+
+- menu( );
+> Função localizada na `linha 3`. 
+
+> Tem como funcionalidade chamar a função que faz imprimir, e assim, imprimir a matriz original. Em seguida executar a função que faz caminhar pela matriz, e por fim, imprimir a matriz final, que sairá de forma visual para o usuário mostrando o caminho percorrido. 
+
+- lerArquivo( );
+> Função localizada na `linha 10`. 
+
+> Tem como funcionalidade abrir o arquivo `input.data`, e não sendo possível realizar essa ação, imprimirá uma mensagem indicando tal erro. Do contrário, tendo êxito em abrir o arquivo, essa função irá ler as informações dentro do arquivo, desde o valor NxN da matriz quanto a matriz inteira. Também é responsável por lidar com a possibilidade do arquivo `input.data` ter espaços em branco no final da última matriz, fazendo com que isso não interfira no resultado desejado.
+
+- primeiraLinha( );
+> Função localizada na `linha 53`. 
+
+> Tem como funcionalidade tokenizar a primeira linha do arquivo `input.data`. É a função responsável por fazer o programa reconhecer que a primeira linha será a correspondente aos valores da N da matriz NxN.
+
+- tokenizar( );
+> Função localizada na `linha 64`. 
+
+> Tem como funcionalidade tokenizar as matrizes subsequentes da primeira linha do `input.data`. É a função responsável por reconhecer as matrizes e ordená-las de forma apropriada.
+
+- ImprimeAleatoria( );
+> Função localizada na `linha 78`. 
+
+> Tem como funcionalidade imprimir a matriz e também é responsável pela formatação da mesma para a visualizaçao do usuário.
+
+- Contador( );
+> Função localizada na `linha 87`. 
+
+> Tem como funcionalidade percorrer a matriz. Essa é a função com mais finalidades para o problema. É onde está a lógica do programa para que a matriz seja percorrida corretamente. Também é lá que é feito a soma dos números transitados pelas matrizes, além de ainda ser responsável por imprimir o caminho que a matriz movimentou.
 
 ## Compilação e Execução
 
@@ -85,8 +164,6 @@ Este algoritmo possui um arquivo Makefile que realiza todo o procedimento de com
 </a>
 
 </div>
-
-git add . && git commit -m "Atualizando" && git push
 
 ## Referências
 
