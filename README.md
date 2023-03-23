@@ -103,7 +103,7 @@ Por fim, uma impressão visual do caminho percorrido dessa matriz.
 
 ### Explicando um pouco sobre o código
 
-O programa em si possui basicamente 6 funções. Todas que irei citar, estão presentes no `caminhoguloso.c`.
+O programa em si possui basicamente 6 funções. Todas que irei citar, estão presentes no [caminhoguloso.c](https://github.com/phpdias/caminho-guloso/blob/main/src/caminhoguloso.c). 
 
 - menu( );
 > Função localizada na [linha 3](https://github.com/phpdias/caminho-guloso/blob/main/src/caminhoguloso.c#L3). 
