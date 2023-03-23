@@ -22,10 +22,14 @@ Dessa forma, o mesmo caminha por um conjunto de matrizes fornecidas como entrada
 
 3 - Partindo da primeira matriz, deve iniciar de um ponto preestabelecido, sendo este contido em arquivos extras de configuração. Não é permitido definir diretamente no código. 
 
-4 - A partir da primeira matriz, tem como regras: 
+4 - A partir da primeira matriz, tem como regras:
+
   > (a) avançar para a próxima coluna; 
+
   > (b) retroceder para coluna anterior; 
+
   > (c) saltar para a linha de baixo; 
+
   > (d) ir em diagonal para baixo. 
   
   ![exemplomatriz](https://user-images.githubusercontent.com/84406892/227231857-df0d0d47-e2e8-4a13-ac89-9f6e3dbd4262.jpeg)
