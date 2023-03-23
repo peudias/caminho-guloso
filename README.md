@@ -46,7 +46,13 @@ Dessa forma, o mesmo caminha por um conjunto de matrizes fornecidas como entrada
 
 ## Sobre o caminho guloso
 
-## Resolução do problema
+Nas palavras de Aditya Y. Bhargava,
+
+> Algoritmos gulosos são caracterizados por, a cada etapa, escolher a solução ideal, para que no fim, tenha uma solução global ideal.
+
+> Em alguns casos, tudo o que você precisa é de um algoritmo que resolva o problema de uma maneira muito boa. E é aí que os algoritmos gulosos entram, pois eles são simples de escrever e normalmente chegam bem perto da solução perfeita.
+
+### Resolução do problema
 
 ### Entradas de dados necessárias
 
@@ -58,7 +64,7 @@ Analogamente, também pode ser digitado manualmente pelo usuário, mas não é o
 
 Para exemplificar, utilizarei o seguinte arquivo `input.data`, gerado por mim através do repositório citado acima.
 
-### input.data
+### Arquivo input.data
 
 No exemplo a seguir, estão as informações sobre o tamanho da matriz e quantas matrizes serão analisadas neste programa.
 
