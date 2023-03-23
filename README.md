@@ -113,17 +113,17 @@ O programa em si possui basicamente 6 funções. Todas que irei citar, estão pr
 - lerArquivo( );
 > Função localizada na `linha 10`. 
 
-> Tem como funcionalidade abrir o arquivo `input.data`, e não sendo possível realizar essa ação, imprimirá uma mensagem indicando tal erro. Do contrário, tendo êxito em abrir o arquivo, essa função irá ler as informações dentro do arquivo, desde o valor NxN da matriz quanto a matriz inteira. Também é responsável por lidar com a possibilidade do arquivo `input.data` ter espaços em branco no final da última matriz, fazendo com que isso não interfira no resultado desejado.
+> Tem como funcionalidade abrir o arquivo `input.data`, e não sendo possível realizar essa ação, imprimirá uma mensagem indicando tal erro. Do contrário, tendo êxito em abrir o arquivo, essa função irá ler as informações dentro do arquivo. Também é responsável por lidar com a possibilidade do arquivo `input.data` ter espaços em branco no final da última matriz, fazendo com que isso não interfira no resultado desejado.
 
 - primeiraLinha( );
 > Função localizada na `linha 53`. 
 
-> Tem como funcionalidade tokenizar a primeira linha do arquivo `input.data`. É a função responsável por fazer o programa reconhecer que a primeira linha será a correspondente aos valores da N da matriz NxN.
+> Tem como funcionalidade tokenizar a primeira linha do arquivo `input.data`. É a função responsável por fazer o programa reconhecer que a primeira linha será a correspondente aos valores de N da matriz NxN.
 
 - tokenizar( );
 > Função localizada na `linha 64`. 
 
-> Tem como funcionalidade tokenizar as matrizes subsequentes da primeira linha do `input.data`. É a função responsável por reconhecer as matrizes e ordená-las de forma apropriada.
+> Tem como funcionalidade tokenizar. É a função responsável por reconhecer as matrizes e acessar a posição apropriada da matriz.
 
 - ImprimeAleatoria( );
 > Função localizada na `linha 78`. 
@@ -133,7 +133,7 @@ O programa em si possui basicamente 6 funções. Todas que irei citar, estão pr
 - Contador( );
 > Função localizada na `linha 87`. 
 
-> Tem como funcionalidade percorrer a matriz. Essa é a função com mais finalidades para o problema. É onde está a lógica do programa para que a matriz seja percorrida corretamente. Também é lá que é feito a soma dos números transitados pelas matrizes, além de ainda ser responsável por imprimir o caminho que a matriz movimentou.
+> Tem como funcionalidade percorrer a matriz. Essa é a função com mais finalidades para o problema. É onde está a lógica do programa para que a matriz seja percorrida corretamente. Também é lá que é feito a soma dos números transitados pelas matrizes, além de ainda ser responsável por imprimir os valores ordenados em que a matriz movimentou.
 
 ## Compilação e Execução
 
