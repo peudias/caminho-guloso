@@ -110,7 +110,7 @@ O programa em si possui basicamente 6 funções. Todas que irei citar, estão pr
 
 
 
-> Tem como funcionalidade chamar a função que faz imprimir, e assim, imprimir a matriz original. Em seguida executar a função que faz caminhar pela matriz, e por fim, imprimir a matriz final, que sairá de forma visual para o usuário mostrando o caminho percorrido. 
+> Tem como funcionalidade chamar a função que faz imprimir, e assim, imprimir a matriz original. Em seguida executar a função que faz caminhar pela matriz, e por fim, imprimir a matriz final, que sairá de forma visual para o usuário, mostrando o caminho percorrido. 
 
 - lerArquivo( );
 > Função localizada na [linha 10](https://github.com/phpdias/caminho-guloso/blob/main/src/caminhoguloso.c#L10). 
