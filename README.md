@@ -128,7 +128,7 @@ O programa em si possui basicamente 6 funções. Todas que irei citar, estão pr
 - ImprimeAleatoria( );
 > Função localizada na `linha 78`. 
 
-> Tem como funcionalidade imprimir a matriz e também é responsável pela formatação da mesma para a visualizaçao do usuário.
+> Tem como funcionalidade imprimir a matriz e também é responsável pela formatação da mesma para a visualizaço do usuário.
 
 - Contador( );
 > Função localizada na `linha 87`. 
