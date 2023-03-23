@@ -54,7 +54,7 @@ Nas palavras de Aditya Y. Bhargava,
 
 ### Resolução do problema
 
-A seguir, três seções das quais abordo a resolução do problema, desde a `entrada de dados`, `saída de dados` e uma rápida explicação de cada uma das `funções imeplementadas` no programa.
+A seguir, três seções das quais abordo a resolução do problema, desde a [entrada de dados](https://github.com/phpdias/caminho-guloso/blob/main/README.md#entradas-de-dados-necess%C3%A1rias), [saída de dados](https://github.com/phpdias/caminho-guloso/blob/main/README.md#sa%C3%ADdas-obtidas) e uma rápida explicação de cada uma das [funções imeplementadas](https://github.com/phpdias/caminho-guloso/blob/main/README.md#explicando-um-pouco-sobre-o-c%C3%B3digo) no programa.
 
 ### Entradas de dados necessárias
 
